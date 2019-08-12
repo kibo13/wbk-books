@@ -1,0 +1,112 @@
+// price 
+.price 
+  padding-bottom: 10vmin
+  text-align: center
+
+  // headline 
+  &-title
+    margin-bottom: 0
+    font-family: $lobster-font
+    font-size: 6.5vmin
+    font-weight: lighter
+
+  // description 
+  &-text
+    font-size: 1em
+    color: $dark-color
+    padding: 0 5vmin
+
+  // cards 
+  &-cards 
+    margin: 0 auto
+    margin-top: 5vmin
+
+    display: flex
+    justify-content: center
+
+    width: 80%
+
+  // card 
+  &-card 
+    margin: 1rem
+
+    display: flex
+    flex-direction: column
+
+    border-radius: 3px
+    border: 1px solid $light-color
+
+    &__title 
+      padding: 1.4rem 2.5rem
+      font-size: 2.5vmin
+      font-family: $rubik-font
+      background: rgba(3, 169, 244, 0.1)
+
+    &__descrip
+      padding: 2.5rem
+      font-family: $rubik-font
+      font-size: 1.1rem
+      color: rgba($dark-color, .85)
+    
+    &__box
+      padding-bottom: 3rem
+      border-radius: 170px 170px 0 0
+      background: rgba(3, 169, 244, 0.1) 
+    
+    &__cost 
+      padding: 1em .5em .5em
+      font-family: $lobster-font
+      font-size: 6.5vmin
+      font-weight: lighter
+
+    &__btn 
+      padding: .6rem 2.5rem
+      color: $default-color
+      background: $dark-color
+      border-radius: 3px
+    
+      &:hover 
+        cursor: pointer
+        color: $default-color
+        background: rgba($dark-color, .9)
+
+// media 
+@media screen and (max-width: $desktopWidth)
+  .price 
+    // cards 
+    &-cards 
+      width: 96%
+
+@media screen and (max-width: $laptopWidth)
+  .price 
+    // cards 
+    &-cards
+      flex-wrap: wrap
+      width: 100%
+    &-card 
+      flex-basis: 38%
+  
+@media screen and (max-width: $tabletWidth)
+  .price 
+    // card 
+    &-card 
+      flex-basis: 50%
+  
+@media screen and (max-width: $mobileWidth)
+  .price 
+    // card 
+    &-card 
+      margin: 0.7rem
+      flex-basis: 86%
+
+      &__descrip
+        padding: 1.3rem
+
+      &__box
+        padding-top: 5vmin
+
+      &__title
+        font-size: 4vmin
+      
+      &__btn
+        padding: .5rem 1.5rem

@@ -1,0 +1,50 @@
+// intro 
+.intro 
+	padding: 7.5vmin 0
+	// height: 100vh
+
+	// intro information 
+	&-info
+		padding: 7vmin 1vmin
+
+		text-align: center
+		font-family: $rubik_font
+		color: $default-color
+
+		&__author 
+			padding: 1vmin
+			font-size: .9em
+			letter-spacing: 2px
+
+		&__genre
+			padding: 0.1rem 0
+			font-size: 5.5vmin
+			font-weight: bold
+
+		&__descrip
+			padding: 1vmin 3.5vmin
+
+		&__btn 
+			padding: 1.5vmin 7vmin
+			
+			font-weight: bold
+			border-radius: 8px
+			border: none
+			background: $default-color
+
+			transition: .3s
+
+			&:hover
+				background: $light-color
+
+	// intro cover 
+	&-cover 
+		&__photo
+			width: 90%
+
+@media screen and (min-width: $desktopWidth)
+	.intro
+		display: flex
+		align-items: flex-start
+
+		height: 100vh

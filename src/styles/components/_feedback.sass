@@ -1,0 +1,77 @@
+// feedback 
+.feedback 
+  padding: 15vmin 0 8vmin
+  text-align: center
+
+  // title 
+  &-title 
+    font-size: 7vmin
+    font-weight: 550
+    font-family: $patua-font
+
+  // description 
+  &-text
+    margin-bottom: 7vmin
+    font-size: 1em
+    font-family: $rubik-font
+    color: $dark-color
+
+  // cards wrapper 
+  &-cards 
+    margin: 0 auto
+    width: 80%
+
+  // cards 
+  &-card 
+    margin-bottom: 2em
+    padding: 2em 1em 1em
+
+    display: flex
+    flex-direction: column
+    align-items: center 
+
+    border: 1px solid $light-color
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)
+
+    &__photo 
+      display: flex
+      align-items: center
+
+      width: 160px
+      height: 160px
+
+      border-radius: 50%
+      overflow: hidden
+
+    &__img 
+      width: 100%
+
+    &__title
+      margin: 0.7em 0 0.5em
+      font-size: 1.5em
+      font-weight: 550
+      font-family: $sniglet-font
+
+    &__text
+      font-family: $rubik-font
+      font-size: .95em
+    
+    &__link
+      margin-top: 2em
+      display: block
+      font-size: 1em
+      color: $dark-color
+
+      &:hover
+        color: rgba($dark-color, .7)
+    
+    &__position 
+      font-size: 1em
+      color: rgba($dark-color, .55)
+
+     
+// media 
+@media screen and (max-width: $desktopWidth)
+  .feedback 
+    &-cards 
+      width: 96%

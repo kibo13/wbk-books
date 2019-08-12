@@ -1,0 +1,86 @@
+// footer 
+.footer 
+	padding: 13vmin 0 3vmin
+	font-family: $sniglet-font
+	color: $default-color
+
+	// content (wrapper)
+	&-content
+		margin: 0 auto
+		width: 90%
+
+	// titles 
+	&-title 
+		margin: 0
+		font-size: 1.5em
+
+	// description 
+	&-text
+		margin-bottom: 0.7em
+		font-size: .85em
+	
+	// subscribe 
+	&-subscribe
+		display: flex
+		width: 80%
+		height: 32px
+		border-radius: 8px	
+		overflow: hidden
+
+		&__input 
+			padding: 0.2em 0.7em
+			width: 100%
+			color: $default-color
+			border: none
+			outline: none
+			background: $dark-color
+
+			&::placeholder
+				color: $light-color
+		
+		&__icon 
+			padding: 0.6em
+			display: flex
+			align-items: center
+			color: $light-color
+			background: $dark-color
+			transition: .3s
+
+			&:hover
+				cursor: pointer
+
+	// social 
+	&-social 
+		display: flex
+		&__icon
+			display: block
+			margin-right: 0.2em
+			font-size: 1.7em
+			transition: .3s 
+
+			&:hover 
+				cursor: pointer
+				transform: translateY(7px)
+
+	// copyright 
+	&-copy
+		padding-top: 3.5em
+		text-align: center
+		letter-spacing: .05em	
+		font-size: 0.75em
+
+		&__author 
+			padding-left: 0.1em
+			font-size: 1.15em
+			font-weight: bold
+			color: $primary-color
+
+// media 
+@media screen and (max-width: $tabletWidth)
+	.footer 
+		text-align: center
+		&-subscribe 
+			margin: 0 auto
+			width: 76%
+		&-social 
+			justify-content: center

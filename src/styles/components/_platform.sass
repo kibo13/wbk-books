@@ -1,0 +1,71 @@
+// platform 
+.platform 
+  padding: 10vmin 0
+  text-align: center
+
+  // title 
+  &-title 
+    padding: 0 .3em
+    font-size: 7vmin
+    font-weight: 550
+    font-family: $patua-font
+    color: $default-color
+
+  // description 
+  &-text 
+    padding: 0 1em
+    padding-bottom: 6vmin
+
+    font-size: 1em
+    color: $default-color
+
+  // content (wrapper)
+  &-content
+    display: flex
+    
+    &:first-child 
+      justify-content: flex-end
+    
+    &:last-child 
+      justify-content: flex-start
+
+  // devices 
+  &-device
+    padding: 1em 2em
+    text-align: left
+    background: $default-color
+    border-radius: 3em
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)
+    transition: .3s
+
+    &:hover
+      cursor: pointer
+      background: $light-color
+
+    &__icon 
+      margin-right: .5em
+      font-size: 7vmin
+
+    &__title
+      margin: 0
+      font-size: 5.5vmin
+      font-weight: 550
+    
+    &__text
+      margin: 0
+      margin-top: -0.7vmin
+      font-size: 1em
+
+// media 
+@media screen and (max-width: $tabletWidth)
+  .platform 
+    &-content
+      display: flex
+      justify-content: center !important
+    
+    &-device
+      &:first-child 
+        margin-bottom: .8em
+
+      &__text
+        font-size: 0.7em

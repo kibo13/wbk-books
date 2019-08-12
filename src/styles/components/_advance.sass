@@ -1,0 +1,95 @@
+// advance 
+.advance 
+  text-align: center
+
+  // headline 
+  &-title
+    padding-top: 15vmin
+    font-family: $patua-font
+    font-size: 7vmin
+    font-weight: lighter  
+    color: $default-color
+
+  // description 
+  &-text
+    padding: 0 5vmin
+    padding-bottom: 15vmin
+    font-family: $rubik_font
+    font-size: 1em
+    color: #e5e5e5
+  
+  // counters 
+  &-counter 
+    margin: 0 auto 
+    width: 76%
+
+    position: relative
+    top: -14vmin
+
+    &__item
+      padding: 0.3em
+      margin: 1rem
+
+      flex-basis: 25%
+      height: 9rem
+
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      border-radius: .5em	
+      background: $default-color
+      box-shadow: 1px 2px 50px 0 rgba(3, 169, 244, 0.3)
+
+      z-index: 1
+    
+    &__total 
+      margin: 0
+      font-size: 3rem
+      color: rgba(3, 169, 244, 0.7)
+
+    &__text
+      margin: 0
+      font-size: .85em
+      font-family: $patua-font
+
+// media 
+@media screen and (max-width: $desktopWidth)
+  .advance 
+    &-counter 
+      width: 90%
+
+      // &__text
+      //   font-size: 2vmin
+        
+@media screen and (max-width: $laptopWidth)
+  .advance
+    &-counter
+      width: 96%
+      flex-wrap: wrap
+
+      &__item 
+        margin: 0.6rem
+        flex-basis: 20%
+        height: 6.5rem
+
+      &__total
+        font-size: 1.7rem
+
+      // &__text
+      //   font-size: 1.7vmin
+
+@media screen and (max-width: $mobileWidth)
+  .advance
+    &-counter
+      width: 100%
+
+      &__item 
+        margin: 0.3rem
+        flex-basis: 40%
+        height: 4rem
+
+      &__total 
+        font-size: 1.5rem
+        
